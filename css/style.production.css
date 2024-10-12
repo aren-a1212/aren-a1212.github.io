@@ -1,19 +1,25 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
+:root{
+    --primary-colorlinks:#ee0000/#ffffff;
+    --secondary-color:#e0b354;
+    --textcolor: black;
+    --dark-grey:#2b2b2b;
+    --mainfontfamily:"Roboto Condensed", sans-serif;
+    --maintxtcolor:brown;
+    --buttoncolor:#836783;
+    --backgroundpagecolor:	#FFF0F5;
+   
+}
 
 body {
-    font-family: reddit sans condesended , sans-serif;
+    font-family: var(--mainfontfamily);
     font-weight: 400;
     font-size: 16px;
+    background-color:var(--backgroundpagecolor);
 }
 head{
     font-size: 16px;
-    font-family: reddit sans condesended , sans-serif;
-    color: black;
+    font-family: var(--mainfontfamily);
+    color: var(--textcolor);
 }
 .site-header{
     display: -webkit-box;
@@ -35,47 +41,51 @@ head{
             justify-content: left;
 }
 .list-about{
-    text-align:center;
+    text-align:left;
     list-style: none;
 }
+p{
+    text-align: center;
+}
+
 
 a {
-    color:#ee0000/#ffffff;
+    color:var(--primary-colorlinks);
 }
 
 a:visited {
-    color:#ee0000/#ffffff;
+    color:var(--primary-colorlinks) ;
 }
 a:hover , a:focus {
     text-decoration: underline;
 }
 a:active{
-    color:#ee0000/#ffffff;
+    color:var(--primary-colorlinks) ;
 }
 
- .button{
-    display: inline-block;
-    border-color:red;
-    font-family: inherit;
-    color:black;
-    background-color:#e0b354;
-    border-radius: 3px;
-    padding: 10px;
-    -webkit-transition:0.4s opacity, 0.5s background-color, 0.4s font-size;
-    -o-transition:0.4s opacity, 0.5s background-color, 0.4s font-size;
-    transition:0.4s opacity, 0.5s background-color, 0.4s font-size;
-}
+ .button3{
+    display: block;
+    margin: auto;
+    width: 15%;
+padding: 10px;
+font-size: 16px;
+border: none;
+background-color:var(--backgroundpagecolor);
+cursor: pointer;
+text-align: center;
+color:var(--buttoncolor);
+ }
 
 .button:hover , button:focus {
     cursor: pointer;
     opacity: 0.8;
 }
  .button__secondary{
-    color:black;
-    background-color:#e0b354;
+    color:var(--textcolor);
+    background-color:var(--secondary-color);
 }
 .button3:hover{
-    background-color:#e0b354;
+    background:var(--buttoncolor);
     font-size: larger;
 }
 .naviagtion--list{
@@ -88,8 +98,8 @@ a:active{
 .naviagtion--list__item--active{
     -webkit-text-decoration: aqua;
             text-decoration: aqua;
-    font-family:reddit sans condesended , sans-serif;
-    color: black;
+    font-family:var(--mainfontfamily);
+    color: var(--textcolor);
     cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -99,35 +109,84 @@ a:active{
             justify-content:flex-end;
     
 }
-form{
-    display: inline-block;
-    background-color: lab(lightness a b);
-    font-family: 'Courier New', Courier, monospace;
+.main-navigation{
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
+.index-container{
+    display:grid;
+    justify-content:center;
+    width: 900px; 
+margin: 0px auto 0px auto; 
+
+}
+
+form{
+    background-color: lab(lightness a b);
+    font-family:var(--mainfontfamily);
+}
+/*chaing buttons */
+.contact-us{
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow:var(--backgroundpagecolor);
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+      }
+      
+      input[type=submit]:hover {
+        background-color:var(--buttoncolor);
+      }
+      
+.standard-label{
+    display: block;
+    height: 20px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    color: #666;
+    border-radius: 20px;
+}
+.standard-label:focus{
+    border: 2px solid #ff994f;
+}
+
 header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-h1{
-    color:brown;
+h3{
+    color:var(--mainfontfamily);
     font-size: large;
 }
-H2{
-    color: reddit sans condesended , sans-serif;
-    font-family: reddit sans condesended , sans-serif;
+h2{
+    color: var(--mainfontfamily);
+    font-family: var(--mainfontfamily);
     font-size: medium;
 }
 P{
     font-size: small;
-font-family:reddit sans condesended , sans-serif;
+font-family:var(--mainfontfamily);
+text-align:center;
 }
 
 thead{
-    color:reddit sans condesended , sans-serif;
+    font-family:var(--mainfontfamily);
+    gap: 10px;
+    background-color: green;
+            Color: white;
+            border: 1px solid black;
+            padding: 5px
+}
+tbody{
+    border: 1px solid black;
+    padding: 5px
 }
 
 .page-footer{
 font-family: Arial, Helvetica, sans-serif;
-color: reddit sans condesended , sans-serif;
+color: var(--mainfontfamily);
 clear: both;
 display: -webkit-box;
 display: -ms-flexbox;
@@ -240,15 +299,10 @@ section{
     transition: trasnform 0.4 ease;
     cursor: pointer;
 }
-#grid-container{
+#grid-container,h1{
     font-size: medium;
     text-align: center;
-    color:black;
-}
-h1{
-    font-size: medium;
-    text-align: center;
-    color:black;
+    color:var(--textcolor);
 }
 .grid-item:hover{
     -webkit-transform: scale(1.05);
@@ -303,85 +357,12 @@ h1{
         grid-row: auto;
         grid-column: auto;
     }
-    #grid-container{
+    #grid-container,h1{
         font-size: larger;
-        font-family: reddit sans condesended , sans-serif;
-    }
-    h1{
-        font-size: larger;
-        font-family: reddit sans condesended , sans-serif;
+        font-family: var(--mainfontfamily);
     }
 }
 
 #about-picture{
     text-align: center;
-}
-.sun {
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
-    -webkit-animation-name: color-change;
-            animation-name: color-change;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-  }
-  
-  @-webkit-keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-  
-    50% {
-      fill: #fcffad;
-    }
-  
-    100% {
-      fill: #f76414;
-    }
-  }
-  
-  @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-  
-    50% {
-      fill: #fcffad;
-    }
-  
-    100% {
-      fill: #f76414;
-    }
-  }
-  
-  /* Animation cloud */
-  
-  .cloud-front {
-    -webkit-animation-duration: 30s;
-            animation-duration: 30s;
-    -webkit-animation-name: cloud-move;
-            animation-name: cloud-move;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-  }
-  
-  @-webkit-keyframes cloud-move {
-    from {
-      -webkit-transform: translate(0, 50px);
-              transform: translate(0, 50px);
-    }
-}
-  
-  @keyframes cloud-move {
-    from {
-      -webkit-transform: translate(0, 50px);
-              transform: translate(0, 50px);
-    }
 }

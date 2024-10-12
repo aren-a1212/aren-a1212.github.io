@@ -5,6 +5,8 @@
 --dark-grey:#2b2b2b;
 --mainfontfamily:"Roboto Condensed", sans-serif;
 --maintxtcolor:brown;
+--buttoncolor:rgb(236, 148, 236);
+--backgroundpagecolor:	#FFF0F5;
 
 }
 
@@ -13,6 +15,7 @@ body {
     font-family: var(--mainfontfamily);
     font-weight: 400;
     font-size: 16px;
+    background-color:var(--backgroundpagecolor) ;
 }
 head{
     font-size: 16px;
@@ -29,9 +32,13 @@ head{
     justify-content: left;
 }
 .list-about{
-    text-align:center;
+    text-align:left;
     list-style: none;
 }
+p{
+    text-align: center;
+}
+
 
 a {
     color:var(--primary-colorlinks);
@@ -47,16 +54,17 @@ a:active{
     color:var(--primary-colorlinks) ;
 }
 
- .button{
-    display: inline-block;
-    border-color:red;
-    font-family: inherit;
-    color:var(--textcolor);
-    background-color:var(--secondary-color);
-    border-radius: 3px;
-    padding: 10px;
-    transition:0.4s opacity, 0.5s background-color, 0.4s font-size;
-}
+ .button3{
+    display: block;
+    margin: auto;
+    width: 15%;
+padding: 10px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+text-align: center;
+color:var(--buttoncolor);
+ }
 
 .button:hover , button:focus {
     cursor: pointer;
@@ -67,7 +75,7 @@ a:active{
     background-color:var(--secondary-color);
 }
 .button3:hover{
-    background-color:var(--secondary-color);
+    background-color:#ffffff;
     font-size: larger;
 }
 .naviagtion--list{
@@ -86,20 +94,48 @@ a:active{
     justify-content:flex-end;
     
 }
+.main-navigation{
+    justify-content: flex-end;
+}
+.index-container{
+    width: 900px; 
+margin: 0px auto 0px auto; 
+display:grid;
+justify-content:center;
+
+}
+
 form{
-    display: inline-block;
     background-color: lab(lightness a b);
     font-family:var(--mainfontfamily) 
+}
+.contact-us{
+    height: 100px;
+    display:inline-block;
+    position:static;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.standard-label{
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    color: #666;
+    border-radius: 50px;
+}
+.standard-label:focus{
+    border: 2px solid #ff994f;
 }
 
 header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-h1{
-    color:var(--maintxtcolor);
+h3{
+    color:var(--mainfontfamily);
     font-size: large;
 }
-H2{
+h2{
     color: var(--mainfontfamily);
     font-family: var(--mainfontfamily);
     font-size: medium;
@@ -107,10 +143,20 @@ H2{
 P{
     font-size: small;
 font-family:var(--mainfontfamily);
+text-align:center;
 }
 
 thead{
-    color:var(--mainfontfamily);
+    font-family:var(--mainfontfamily);
+    gap: 10px;
+    background-color: green;
+            Color: white;
+            border: 1px solid black;
+            padding: 5px
+}
+tbody{
+    border: 1px solid black;
+    padding: 5px
 }
 
 .page-footer{
