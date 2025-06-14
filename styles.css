@@ -1,0 +1,140 @@
+/* ─── Google Font ─── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* ─── CSS Variables ─── */
+:root {
+  /* Colors */
+  --color-bg: #f0f4f8;
+  --color-card-bg: #ffffff;
+  --color-text: #2c3e50;
+  --color-heading: #1a1a1a;
+  --color-link: #3b82f6;
+  --color-link-hover: #1e40af;
+  --color-accent: #10b981;
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing: 1rem;
+  --spacing-lg: 2rem;
+
+  /* Border radius */
+  --radius: 8px;
+}
+
+/* ─── Global Reset & Base ─── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  padding: var(--spacing-lg);
+}
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+/* ─── Intro Section ─── */
+#intro {
+  max-width: 700px;
+  margin: 0 auto var(--spacing-lg);
+  font-size: 1.125rem;
+  text-align: center;
+}
+#intro a {
+  font-weight: 600;
+}
+
+/* ─── Projects Grid ─── */
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ─── Project Card ─── */
+.project-card {
+  background: var(--color-card-bg);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: var(--color-heading);
+  margin: var(--spacing);
+  text-align: center;
+}
+.project-screenshot {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #e2e8f0;
+}
+.project-description {
+  flex: 1;
+  margin: var(--spacing);
+  font-size: 1rem;
+}
+
+/* ─── Links & Tech List ─── */
+.project-links {
+  list-style: none;
+  padding: 0 var(--spacing) var(--spacing);
+}
+.project-links li {
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.95rem;
+}
+.tech-heading {
+  margin: 0 var(--spacing) var(--spacing-sm);
+  font-size: 1.25rem;
+  color: var(--color-heading);
+}
+.tech-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  padding: 0 var(--spacing) var(--spacing);
+}
+.tech-list li {
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding: var(--spacing-sm) var(--spacing);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+}
+
+/* ─── Responsive Tweaks ─── */
+@media (max-width: 600px) {
+  #intro {
+    font-size: 1rem;
+  }
+  .project-title {
+    font-size: 1.25rem;
+  }
+}
+
+  

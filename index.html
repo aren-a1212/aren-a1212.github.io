@@ -1,22 +1,87 @@
 <!DOCTYPE html>
-<html lang=
-"en">
+<html lang="en">
 <head>
-<meta charset=
-"UTF-8" />
-<meta http-equiv=
-"X-UA-Compatible" content=
-"IE=edge" />
-<meta name=
-"viewport" content= "width=device-width, initial-scale=1.0" />
-<title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <link 
+  rel="icon"
+  type="images/png"
+  href="assets/images/fairy-favicon.png" >
+  <title>Aren’s Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<p>
-My name is Aren and I own this domain
-<a href=
-"mailto:abdelazizahmed1212@gmail.com">abdelazizahmed1212@gmail.com</a>
-</p>
+
+  <div id="intro">
+    <p>
+      My name is Aren and I own this domain —
+      <a href="mailto:abdelazizahmed1212@gmail.com"
+        >abdelazizahmed1212@gmail.com</a
+      >
+    </p>
+  </div>
+
+  <section id="projects">
+    <div class="project-card">
+      <h2 class="project-title">Meet App</h2>
+
+      <a
+        href="https://meet-zeta-ten.vercel.app"
+        target="_blank"
+        rel="noopener"
+      >
+        <img
+          src="/assets/images/meet-screenshott.png"
+          alt="Screenshot of Meet App"
+          class="project-screenshot"
+        />
+      </a>
+
+      <p class="project-description">
+        <strong>Objective:</strong>
+        A Progressive Web App that fetches Google Calendar events, allows
+        filtering by city and number of events, and visualizes data with
+        interactive charts.
+      </p>
+
+      <ul class="project-links">
+        <li>
+          🔗 Live Demo:
+          <a
+            href="https://meet-zeta-ten.vercel.app"
+            target="_blank"
+            rel="noopener"
+            >meet-zeta-ten.vercel.app</a
+          >
+        </li>
+        <li>
+          💻 Source:
+          <a
+            href="https://github.com/your-username/meet"
+            target="_blank"
+            rel="noopener"
+            >github.com/your-username/meet</a
+          >
+        </li>
+      </ul>
+
+      <h3 class="tech-heading">Technologies</h3>
+      <ul class="tech-list">
+        <li>React</li>
+        <li>Vite</li>
+        <li>Jest & Jest-Cucumber</li>
+        <li>Recharts</li>
+        <li>VitePWA / Workbox</li>
+        <li>Vercel</li>
+      </ul>
+    </div>
+  </section>
+
 </body>
 </html>
+
 
