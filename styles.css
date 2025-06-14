@@ -1,7 +1,7 @@
-/* ─── Google Font ─── */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-/* ─── CSS Variables ─── */
+
 :root {
   /* Colors */
   --color-bg: #f0f4f8;
@@ -28,12 +28,12 @@
   padding: 0;
 }
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  line-height: 1.6;
-  padding: var(--spacing-lg);
-}
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    color: var(--color-text);
+    line-height: 1.6;
+    padding: var(--spacing-lg);
+  }
 a {
   color: var(--color-link);
   text-decoration: none;
@@ -127,7 +127,7 @@ a:focus {
   font-size: 0.875rem;
 }
 
-/* ─── Responsive Tweaks ─── */
+
 @media (max-width: 600px) {
   #intro {
     font-size: 1rem;
@@ -136,5 +136,10 @@ a:focus {
     font-size: 1.25rem;
   }
 }
-
+.screenshot-caption {
+    text-align: center;
+    font-style: italic;
+    color: #555;             
+    margin: var(--spacing) 0;    
+  }
   
