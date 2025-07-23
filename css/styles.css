@@ -286,6 +286,53 @@ body {
   margin-right: 0.5rem;
   color: var(--color-accent);
 }
+.education-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.education-list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.education-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: var(--color-accent);
+  border-radius: 50%;
+}
+
+
+.interests-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.interests-list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.interests-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: var(--color-accent);
+  border-radius: 50%;
+}
+
 
 /* Resume Button CTA */
 .btn {
